@@ -1,30 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>House Designing</title>
-     <!-- google font -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-     <!-- font awesome -->
-     <script src="https://kit.fontawesome.com/6aa1e7615e.js" crossorigin="anonymous"></script>
-     <!-- tailwind cdn -->
-     <script src="https://cdn.tailwindcss.com"></script>
-     <script>
-          tailwind.config = {
-            theme: {
-              extend: {
-                colors: {
-                  clifford: '#da373d',
-                }
-              }
-            }
-          }
-        </script>
-</head>
-<body>
-     
-</body>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House Designing</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/6aa1e7615e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyui cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              manrope: ["manrope", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-manrope">
+    <main class="max-w-screen-xl mx-auto p-6 lg:p-10">
+      <!-- header section -->
+      <header>
+        <!-- nav bar for samll device -->
+
+        <nav class=" navbar bg-base-100 lg:hidden">
+          <div class="navbar-start">
+            <a class="btn btn-ghost text-xl"><i class="bg-green-400 p-1 rounded-full   -rotate-45 fa-solid fa-arrow-right"></i>   Rinterio</a>
+          </div>
+
+          <div class="navbar-end">
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="text-2xl fa-solid fa-bars"> </i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li>
+                  <a>Services</a>
+                 </li>
+                <li><a>About Us</a></li>
+                <li><a>Blogs</a></li>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- header icons and buttons -->
+        <nav class="lg:flex justify-between  hidden">
+        <div class="text-xl font-bold lg:text-2xl"><i class="bg-green-400 p-1 rounded-full   -rotate-45 fa-solid fa-arrow-right"></i>   Rinterio</div>
+        <div>
+          <a>Home</a>
+        </div>
+        <div>
+          <a>Services</a>
+        </div>
+        <div>
+          <a>Portfolio</a>
+        </div>
+        <div>
+          <a>Blogs</a>
+        </div>
+        <div>
+          <a>Contact us</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="bg-green-200 rounded-lg px-2 py-2 text-center text-xl font-bold lg:text-2xl"> Book Consult <i class="bg-black p-1 rounded-full text-green-300  -rotate-45 fa-solid fa-arrow-right"></i></div>
+      </nav>
+        <!-- image and heading underneathe -->
+        <div class=" lg:flex items-center justify-center pt-10" >
+          <img src="assets/banner.png" alt=""></div>
+          <!-- image texts -->
+          <div class=" lg:p-20 items-center justify-center">
+            <h1 class="text-center text-3xl font-bold lg:text-5xl ">A barn house of this design has a 
+           striking appearance</h1>
+            <p class="text-gray-600 text-center mt-4 ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <div class=" flex justify-center items-center mt-5git add . lg:mt-10 ">
+              <button class="bg-green-200 rounded-lg px-2 py-2  text-center text-xl font-bold lg:text-2xl"> View Details <i class="bg-black p-1 rounded-full text-green-300  -rotate-45 fa-solid fa-arrow-right"></i></button></div>
+            </button>
+          </div>
+        
+      </header>
+    </main>
+  </body>
 </html>
